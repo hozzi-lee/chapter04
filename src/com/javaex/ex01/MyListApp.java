@@ -21,14 +21,14 @@ public class MyListApp {
 
 		System.out.println(pList.get(1)); // [1]데이터 toString() 출력
 		System.out.println(pList.get(1).getX()); // [1]데이터의 x값
-		
+
 		System.out.println("-------------------");
-		
+
 		for(int i = 0; i < pList.size(); i++) {
 			System.out.println(pList.get(i));
 			System.out.println(pList.get(i).getX());
 		}
-		
+
 		/*
 		pList.remove(0); // [0]데이터 삭제 --> 배열 2개
 
@@ -60,8 +60,41 @@ public class MyListApp {
 		}
 		 */
 		System.out.println("=======Point=======");
-		
-		
+		System.out.println();
+		System.out.println();
+		System.out.println("-------Circle-------");
+
+
+		// Circle를 관리하는 리스트(배열대용)
+		CircleList cList = new CircleList();
+
+		Circle circ00 = new Circle(1);
+		Circle circ01 = new Circle(2);
+		Circle circ02 = new Circle(4);
+		Circle circ03 = new Circle(8);
+		Circle circ04 = new Circle(16);
+		Circle circ05 = new Circle(32);
+		Circle circ06 = new Circle(64);
+
+		cList.add(circ00);
+		cList.add(circ01);
+		cList.add(circ02);
+		cList.add(circ03);
+		cList.add(circ04);
+		cList.add(circ05);
+		cList.add(circ06);
+
+		System.out.println(cList);
+		System.out.println(cList.size());
+		//		System.out.println(cArray.get(2));
+
+		for(int i = 0; i < cList.size(); i++) {
+			System.out.println(cList.get(i));
+		}
+
+		System.out.println("=======Circle=======");
+
+
 	}
 
 }
