@@ -4,13 +4,13 @@ public class MyListApp {
 	public static void main(String[] args) {
 
 		System.out.println("------- Point -------");
-		MyList pList = new MyList();
+		MyList pointList = new MyList();
 
-		pList.add(new Point(1, 2));
-		pList.add(new Point(4, 8));
+		pointList.add(new Point(1, 2));
+		pointList.add(new Point(4, 8));
 
-		for(int i = 0; i < pList.size(); i++) {
-			System.out.println(pList.get(i));
+		for(int i = 0; i < pointList.size(); i++) {
+			System.out.println(pointList.get(i));
 		}
 
 		//
@@ -18,13 +18,16 @@ public class MyListApp {
 		//
 
 		System.out.println("------- Circle -------");
-		MyList cList = new MyList();
+		MyList circleList = new MyList();
 
-		cList.add(new Circle(16));
-		cList.add(new Circle(32));
+		circleList.add(new Circle(16));
+		circleList.add(new Circle(32));
+		circleList.add(new Circle(64));
+		// --> circleList에 Point가 들어와도 오류가 없음.
+		circleList.add(new Point(128, 256));
 
-		for(int i = 0; i < cList.size(); i++ ) {
-			System.out.println(cList.get(i));
+		for(int i = 0; i < circleList.size(); i++ ) {
+			System.out.println(circleList.get(i));
 		}
 
 	}

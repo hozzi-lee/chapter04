@@ -12,7 +12,7 @@ public class MyList {
 
 	// constructors
 	public MyList() {
-		this.oArray = new Object[3];
+		this.oArray = new Object[4];
 	}
 
 
