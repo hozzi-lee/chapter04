@@ -68,6 +68,7 @@ public class MyListApp {
 		// Circle를 관리하는 리스트(배열대용)
 		CircleList cList = new CircleList();
 
+		/*
 		Circle circ00 = new Circle(1);
 		Circle circ01 = new Circle(2);
 		Circle circ02 = new Circle(4);
@@ -75,14 +76,15 @@ public class MyListApp {
 		Circle circ04 = new Circle(16);
 		Circle circ05 = new Circle(32);
 		Circle circ06 = new Circle(64);
+		 */
 
-		cList.add(circ00);
-		cList.add(circ01);
-		cList.add(circ02);
-		cList.add(circ03);
-		cList.add(circ04);
-		cList.add(circ05);
-		cList.add(circ06);
+		cList.add(new Circle(1));
+		cList.add(new Circle(2));
+		cList.add(new Circle(4));
+		cList.add(new Circle(8));
+		cList.add(new Circle(16));
+		cList.add(new Circle(32));
+		cList.add(new Circle(64));
 
 		System.out.println(cList);
 		System.out.println(cList.size());
