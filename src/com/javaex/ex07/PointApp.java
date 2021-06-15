@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class PointApp {
-	public void main(String[] args) {
+	public static void main(String[] args) {
 
 		Set<Point> pSet = new HashSet<Point>();
 
